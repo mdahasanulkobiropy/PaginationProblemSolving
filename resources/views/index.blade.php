@@ -23,7 +23,8 @@
                 
                 <tbody>
                     @foreach ($users as $key => $item)
-                    <tr><td>{{($page-1)*2 + $key + 1}}</td>
+                    <tr>
+                        <td>{{($page-1)*2 + $key + 1}}</td> <!-- 2 means ItemAmmount per page--->
                         <td>{{$item->name}}</td>
                         <td>{{$item->email}}</td>
                         <td>
